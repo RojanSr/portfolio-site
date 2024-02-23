@@ -48,7 +48,7 @@ const Home = () => {
           <SecondaryButton text={"MY WORKS"} />
         </Box>
       </Box>
-      <Box width={"650px"} height={"700px"}>
+      <Box width={"650px"} height={"600px"}>
         <Image src={ProfileImg} />
       </Box>
     </Box>
