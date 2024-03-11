@@ -57,7 +57,7 @@ const Navbar = () => {
                   left: "50%",
                   backgroundColor: "#ffbd39",
                   transition: "all 0.3s ease-in-out",
-                  bottom: "-2px",
+                  bottom: "-4px",
                 }}
                 _after={{
                   content: `""`,
@@ -67,7 +67,7 @@ const Navbar = () => {
                   right: "50%",
                   backgroundColor: "#ffbd39",
                   transition: "all 0.3s ease-in-out",
-                  bottom: "-2px",
+                  bottom: "-4px",
                 }}
                 _hover={{
                   "&::before, &::after": {
