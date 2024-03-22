@@ -18,6 +18,14 @@ const theme = {
       a: {
         color: "teal.500",
       },
+      "::selection": {
+        background: "#333333",
+        color: "#ffffff",
+      },
+      "::-moz-selection": {
+        background: "#333333",
+        color: "#ffffff",
+      },
     },
   },
 };

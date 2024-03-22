@@ -1,7 +1,8 @@
 import { Box, Button, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import React, { forwardRef } from "react";
 import ProfileImg from "../../assets/profile.png";
 import { PrimaryButton, SecondaryButton } from "../../components/button";
+import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       display={"flex"}
       alignItems={"center"}
       gap={"30px"}
+      mb={"50px"}
     >
       <Box display={"flex"} flexDirection={"column"} gap={"8px"}>
         <Text
@@ -48,8 +50,8 @@ const Home = () => {
           <SecondaryButton text={"MY WORKS"} />
         </Box>
       </Box>
-      <Box width={"650px"} height={"600px"}>
-        <Image src={ProfileImg} />
+      <Box width={"600px"} height={"300px"} mt={"-370px"}>
+        <Image src={ProfileImg} borderRadius={"40%"} />
       </Box>
     </Box>
   );
