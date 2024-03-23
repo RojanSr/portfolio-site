@@ -1,41 +1,26 @@
 import { Box, Text } from "@chakra-ui/react";
 import React from "react";
+import FadebackText from "../../components/common/FadebackText/FadebackText";
 
 const Skills = () => {
   return (
-    <Box id="skills" mb={"100px"}>
-      <Box>
-        <Text
-          fontSize={"3.1rem"}
-          fontWeight={"bolder"}
-          position={"relative"}
-          textAlign={"center"}
-          _before={{
-            content: '"Skills"',
-            position: "absolute",
-            fontSize: "7vw",
-            fontWeight: "900",
-            color: "rgba(255, 255, 255, 0.1)",
-            top: "-5px",
-            left: "-15px",
-          }}
-          mb={"10px"}
-        >
-          My Skills
-        </Text>
+    <Box
+      id="skills"
+      display={"flex"}
+      flexDirection={"column"}
+      alignItems={"center"}
+      pt={"50px"}
+    >
+      <FadebackText text={"My Skills"} fadeback={"Skills"} center />
+      <Text>
+        Far far away, behind the word mountains, far from the countries Vokalia
+        and Consonantia
+      </Text>
 
-        <Text>
-          Far far away, behind the word mountains, far from the countries
-          Vokalia and Consonantia
-        </Text>
-
-        <Box display={"flex"} flexDir={"column"}>
-          <Box display={"flex"} gap={"90px"}>
-
-          </Box>
-          <Box display={"flex"} gap={"90px"}></Box>
-          <Box display={"flex"} gap={"90px"}></Box>
-        </Box>
+      <Box display={"flex"} flexDir={"column"}>
+        <Box display={"flex"} gap={"90px"}></Box>
+        <Box display={"flex"} gap={"90px"}></Box>
+        <Box display={"flex"} gap={"90px"}></Box>
       </Box>
     </Box>
   );

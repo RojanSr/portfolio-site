@@ -2,9 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 import { Box } from "@chakra-ui/react";
 
-const Reveal = ({ children, width = "fit-content" }) => {
+const Reveal = ({ children, width = "inherit" }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, {
+    once: true,
+    amount: 0.5,
+  });
 
   const mainControls = useAnimation();
 
@@ -13,7 +16,7 @@ const Reveal = ({ children, width = "fit-content" }) => {
       // Fire the animation
       mainControls.start("visible");
     }
-  }, [isInView]);
+  }, [isInView, mainControls]);
   return (
     <Box ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
       <motion.div

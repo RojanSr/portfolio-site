@@ -5,7 +5,6 @@ const NAVLIST = [
   { to: "#home", name: "Home" },
   { to: "#about", name: "About" },
   { to: "#resume", name: "Resume" },
-  { to: "#services", name: "Services" },
   { to: "#skills", name: "Skills" },
   { to: "#projects", name: "Projects" },
   { to: "#my_blogs", name: "My Blogs" },
