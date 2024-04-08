@@ -24,7 +24,7 @@ function App() {
         <Reveal>
           <Skills />
         </Reveal>
-        <Reveal>
+        <Reveal revealAmount={0.2}>
           <Contact />
         </Reveal>
       </Box>

@@ -1,5 +1,4 @@
 import { Box, Text } from "@chakra-ui/react";
-import React from "react";
 import FadebackText from "../../components/common/FadebackText/FadebackText";
 
 const Resume = () => {

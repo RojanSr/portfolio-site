@@ -1,5 +1,4 @@
 import { Text } from "@chakra-ui/react";
-import React from "react";
 
 const FadebackText = ({ text, fadeback, center = false, style }) => {
   const contentText = "'" + fadeback + "'";
@@ -17,7 +16,7 @@ const FadebackText = ({ text, fadeback, center = false, style }) => {
         color: "rgba(255, 255, 255, 0.1)",
         top: "-5px",
         left: center ? "50%" : "-15px",
-        transform: center ? "translateX(-50%)" : "translateX(0)",
+        transform: center ? "translateX(-50%)" : "translateX(0)"
       }}
       mb={"10px"}
       {...style}

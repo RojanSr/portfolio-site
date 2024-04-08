@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo 'linting your git commit...please wait...'
+
+npx commitlint --config commitlint.config.cjs --edit $1 ||
+(
+    echo 'your commit doesn\"t follow the standards!.
+          please format your commit following the guideline from README.md';
+    false;
+)
+
+echo 'all done!'

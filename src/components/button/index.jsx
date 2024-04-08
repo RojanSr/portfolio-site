@@ -1,5 +1,4 @@
 import { Button } from "@chakra-ui/react";
-import React from "react";
 
 const PrimaryButton = ({ text, onClick, ...props }) => {
   return (
@@ -15,10 +14,10 @@ const PrimaryButton = ({ text, onClick, ...props }) => {
       fontWeight={"600"}
       transition={"transform 0.2s ease-in-out"}
       _hover={{
-        backgroundColor: "#e5aa33",
+        backgroundColor: "#e5aa33"
       }}
       _active={{
-        transform: "scale(0.95)",
+        transform: "scale(0.95)"
       }}
       {...props}
     >
@@ -41,10 +40,10 @@ const SecondaryButton = ({ text, onClick }) => {
       border={"1px solid rgba(255, 255, 255, 0.5)"}
       transition={"transform 0.2s ease-in-out"}
       _hover={{
-        backgroundColor: "rgba(255, 255, 255, 0.08)",
+        backgroundColor: "rgba(255, 255, 255, 0.08)"
       }}
       _active={{
-        transform: "scale(0.95)",
+        transform: "scale(0.95)"
       }}
     >
       {text}

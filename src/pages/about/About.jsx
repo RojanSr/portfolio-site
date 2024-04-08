@@ -1,5 +1,5 @@
-import { Box, Grid, GridItem, Image, Input, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Grid, GridItem, Image, Text } from "@chakra-ui/react";
+import { Fragment } from "react";
 import profileImg from "../../assets/profile.png";
 import { PrimaryButton } from "../../components/button";
 import pdfFile from "../../assets/pdf/frontend_developer_rojan_rai.pdf";
@@ -13,7 +13,7 @@ const MY_INFO = {
   address: "San Francisco CA 97987 USA",
   zip_code: "1000",
   email: "ajaypudasaini.gmail.com",
-  phone: "+1-2234-5678-9-0",
+  phone: "+1-2234-5678-9-0"
 };
 
 // Create function for file download
@@ -49,7 +49,7 @@ const About = () => {
       </Box>
       <Box maxW={"500px"}>
         <FadebackText text={"About"} fadeback={"About"} />
-        <Text color={"#999999"} fontSize={"16px"} py={"18px"}>
+        <Text color={"white.400"} fontSize={"16px"} py={"18px"}>
           In publishing and graphic design, Lorem ipsum is a placeholder text
           commonly used to demonstrate the visual.
         </Text>
@@ -62,12 +62,12 @@ const About = () => {
         >
           {Object.keys(MY_INFO).map((info) => {
             return (
-              <>
+              <Fragment key={info}>
                 <GridItem textTransform={"capitalize"} fontWeight={"600"}>
                   {info.replaceAll("_", " ")}:
                 </GridItem>
-                <GridItem color={"#999999"}>{MY_INFO[info]}</GridItem>
-              </>
+                <GridItem color={"white.400"}>{MY_INFO[info]}</GridItem>
+              </Fragment>
             );
           })}
         </Grid>
