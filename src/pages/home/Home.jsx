@@ -1,5 +1,4 @@
-import { Box, Button, Image, Text } from "@chakra-ui/react";
-import React from "react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import ProfileImg from "../../assets/profile.png";
 import { PrimaryButton, SecondaryButton } from "../../components/button";
 
@@ -7,10 +6,10 @@ const Home = () => {
   return (
     <Box
       id="home"
-      height={"100vh"}
       display={"flex"}
       alignItems={"center"}
       gap={"30px"}
+      pt={"70px"}
     >
       <Box display={"flex"} flexDirection={"column"} gap={"8px"}>
         <Text
@@ -24,7 +23,7 @@ const Home = () => {
         </Text>
         <Box fontWeight={"bolder"} fontSize={"60px"} lineHeight={1.1}>
           <Text>
-            I'm{" "}
+            I&apos;m{" "}
             <Text as={"span"} color={"#ffbd39"}>
               Ajay Pudasaini
             </Text>
@@ -48,8 +47,14 @@ const Home = () => {
           <SecondaryButton text={"MY WORKS"} />
         </Box>
       </Box>
-      <Box width={"650px"} height={"600px"}>
-        <Image src={ProfileImg} />
+
+      <Box height={"700px"}>
+        <Image
+          src={ProfileImg}
+          objectFit={"contain"}
+          h={"inherit"}
+          w={"inherit"}
+        />
       </Box>
     </Box>
   );
