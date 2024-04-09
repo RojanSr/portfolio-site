@@ -1,8 +1,6 @@
 import { Box, Image, Text } from "@chakra-ui/react";
-import React from "react";
 import ProfileImg from "../../assets/profile.png";
 import { PrimaryButton, SecondaryButton } from "../../components/button";
-import Reveal from "../../components/framerMotion/Reveal";
 
 const Home = () => {
   return (
@@ -11,8 +9,7 @@ const Home = () => {
       display={"flex"}
       alignItems={"center"}
       gap={"30px"}
-      pb={"200px"}
-      pt={"250px"}
+      pt={"70px"}
     >
       <Box display={"flex"} flexDirection={"column"} gap={"8px"}>
         <Text
@@ -26,7 +23,7 @@ const Home = () => {
         </Text>
         <Box fontWeight={"bolder"} fontSize={"60px"} lineHeight={1.1}>
           <Text>
-            I'm{" "}
+            I&apos;m{" "}
             <Text as={"span"} color={"#ffbd39"}>
               Ajay Pudasaini
             </Text>
@@ -51,8 +48,13 @@ const Home = () => {
         </Box>
       </Box>
 
-      <Box width={"600px"} height={"300px"} mt={"-370px"}>
-        <Image src={ProfileImg} borderRadius={"40%"} />
+      <Box height={"700px"}>
+        <Image
+          src={ProfileImg}
+          objectFit={"contain"}
+          h={"inherit"}
+          w={"inherit"}
+        />
       </Box>
     </Box>
   );

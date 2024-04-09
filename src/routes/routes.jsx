@@ -6,8 +6,8 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement: <ErrorPage />,
-  },
+    errorElement: <ErrorPage />
+  }
 ]);
 
 export default router;
